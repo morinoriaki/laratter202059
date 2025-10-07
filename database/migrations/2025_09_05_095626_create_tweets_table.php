@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('tweets', function (Blueprint $table) {
             $table->id();
+         $table->unsignedBigInteger('user_id');
+             $table->string('tweet');
             $table->timestamps();
         });
     }
@@ -25,3 +27,4 @@ return new class extends Migration
         Schema::dropIfExists('tweets');
     }
 };
+

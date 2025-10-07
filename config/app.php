@@ -104,7 +104,7 @@ return [
             explode(',', (string) env('APP_PREVIOUS_KEYS', ''))
         ),
     ],
-
+   
     /*
     |--------------------------------------------------------------------------
     | Maintenance Mode Driver
@@ -123,4 +123,5 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    
 ];
